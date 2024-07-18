@@ -1,7 +1,7 @@
 document.addEventListener('click', function (event) {
   /** @type Element */
   var result = event.target;
-  // 忽略 A 标签
+  // 忽略 A 標籤
   if (result.tagName === 'A') {
     return;
   }
