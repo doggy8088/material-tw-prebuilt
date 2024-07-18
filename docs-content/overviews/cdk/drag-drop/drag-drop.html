@@ -1,4 +1,4 @@
-<div class="docs-markdown"><p translation-result="on"><code>@angular/cdk/drag-drop</code> 模块为你提供了一种方便易用、声明性地创建可拖放界面的方式，它支持自由拖动、在列表中排序、在列表之间转移条目、动画、触摸设备、自定义拖动把手、预览和占位符，以及水平列表和轴向锁定。</p><p translation-origin="off">The <code>@angular/cdk/drag-drop</code> module provides you with a way to easily and declaratively create
+<div class="docs-markdown"><p translation-result="on"><code>@angular/cdk/drag-drop</code> 模組為你提供了一種方便易用、宣告性地建立可拖放介面的方式，它支援自由拖動、在清單中排序、在清單之間轉移條目、動畫、觸控裝置、自定義拖動把手、預覽和佔位符，以及水平清單和軸向鎖定。</p><p translation-origin="off">The <code>@angular/cdk/drag-drop</code> module provides you with a way to easily and declaratively create
 drag-and-drop interfaces, with support for free dragging, sorting within a list, transferring items
 between lists, animations, touch devices, custom drag handles, previews, and placeholders,
 in addition to horizontal lists and locking along an axis.</p>
@@ -13,7 +13,7 @@ in addition to horizontal lists and locking along an axis.</p>
         </h3>
       
         
-      <p translation-result="on">首先，将 <code>DragDropModule</code> 导入到要使用拖放功能的 <code>NgModule</code> 中。这样你就可以把 <code>cdkDrag</code> 指令添加到元素中，让它们变得可拖动了。当没有 <code>cdkDropList</code> 元素的时候，可拖动元素可以在页面中自由移动。你可以添加 <code>cdkDropList</code> 元素来约束元素可以被扔在哪里。</p><p translation-origin="off">Start by importing <code>DragDropModule</code> into the <code>NgModule</code> where you want to use drag-and-drop
+      <p translation-result="on">首先，將 <code>DragDropModule</code> 匯入到要使用拖放功能的 <code>NgModule</code> 中。這樣你就可以把 <code>cdkDrag</code> 指令新增到元素中，讓它們變得可拖動了。當沒有 <code>cdkDropList</code> 元素的時候，可拖動元素可以在頁面中自由移動。你可以新增 <code>cdkDropList</code> 元素來約束元素可以被扔在哪裡。</p><p translation-origin="off">Start by importing <code>DragDropModule</code> into the <code>NgModule</code> where you want to use drag-and-drop
 features. You can now add the <code>cdkDrag</code> directive to elements to make them draggable. When
 outside of a <code>cdkDropList</code> element, draggable elements can be freely moved around the page.
 You can add <code>cdkDropList</code> elements to constrain where elements may be dropped.</p>
@@ -22,15 +22,15 @@ You can add <code>cdkDropList</code> elements to constrain where elements may be
 
 
         <h3 id="reordering-lists" class="docs-header-link" translation-result="on">
-          <span header-link="重新排序列表"></span>
-          重新排序列表
+          <span header-link="重新排序清單"></span>
+          重新排序清單
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="reordering-lists"></span>
           Reordering lists
         </h3>
       
         
-      <p translation-result="on">在一组 <code>cdkDrag</code> 元素外添加一个 <code>cdkDropList</code> 包装可以把这些可拖曳元素分组成一个可重新排序的集合。当元素移动时，这些条目会自动重新排序。注意，这<em>不会</em>更新你的数据模型，你可以监听 <code>cdkDropListDropped</code> 事件，以便在用户完成拖放操作后更新数据模型。</p><p translation-origin="off">Adding <code>cdkDropList</code> around a set of <code>cdkDrag</code> elements groups the draggables into a
+      <p translation-result="on">在一組 <code>cdkDrag</code> 元素外新增一個 <code>cdkDropList</code> 包裝可以把這些可拖曳元素分組成一個可重新排序的集合。當元素移動時，這些條目會自動重新排序。注意，這<em>不會</em>更新你的資料模型，你可以監聽 <code>cdkDropListDropped</code> 事件，以便在使用者完成拖放操作後更新資料模型。</p><p translation-origin="off">Adding <code>cdkDropList</code> around a set of <code>cdkDrag</code> elements groups the draggables into a
 reorderable collection. Items will automatically rearrange as an element moves. Note
 that this will <em>not</em> update your data model; you can listen to the <code>cdkDropListDropped</code> event to
 update the data model once the user finishes dragging.</p>
@@ -39,21 +39,21 @@ update the data model once the user finishes dragging.</p>
 
 
         <h3 id="transferring-items-between-lists" class="docs-header-link" translation-result="on">
-          <span header-link="在列表之间转移条目"></span>
-          在列表之间转移条目
+          <span header-link="在清單之間轉移條目"></span>
+          在清單之間轉移條目
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="transferring-items-between-lists"></span>
           Transferring items between lists
         </h3>
       
         
-      <p translation-result="on"><code>cdkDropList</code> 指令支持在相互连接的拖放区之间转移要拖动的项。你可以把一个或多个 <code>cdkDropList</code> 实例连接起来，方法是设置 <code>cdkDropListConnectedTo</code> 属性，或把这些元素包含在带有 <code>cdkDropListGroup</code> 属性的元素中。</p><p translation-origin="off">The <code>cdkDropList</code> directive supports transferring dragged items between connected drop zones.
+      <p translation-result="on"><code>cdkDropList</code> 指令支援在相互連線的拖放區之間轉移要拖動的項。你可以把一個或多個 <code>cdkDropList</code> 實例連線起來，方法是設定 <code>cdkDropListConnectedTo</code> 屬性，或把這些元素包含在帶有 <code>cdkDropListGroup</code> 屬性的元素中。</p><p translation-origin="off">The <code>cdkDropList</code> directive supports transferring dragged items between connected drop zones.
 You can connect one or more <code>cdkDropList</code> instances together by setting the <code>cdkDropListConnectedTo</code>
 property or by wrapping the elements in an element with the <code>cdkDropListGroup</code> attribute.</p>
 
 <div material-docs-example="cdk-drag-drop-connected-sorting"></div>
 
-<p translation-result="on">注意，<code>cdkDropListConnectedTo</code> 既可以直接引用其它拖放容器（<code>cdkDropList</code>）的实例，也可以引用其它拖放容器的 <code>id</code> ：</p><p translation-origin="off">Note that <code>cdkDropListConnectedTo</code> works both with a direct reference to another <code>cdkDropList</code>, or
+<p translation-result="on">注意，<code>cdkDropListConnectedTo</code> 既可以直接引用其它拖放容器（<code>cdkDropList</code>）的實例，也可以引用其它拖放容器的 <code>id</code> ：</p><p translation-origin="off">Note that <code>cdkDropListConnectedTo</code> works both with a direct reference to another <code>cdkDropList</code>, or
 by referencing the <code>id</code> of another drop container:</p>
 
 <pre><code class="language-html"><span class="hljs-comment">&lt;!-- This is valid --&gt;</span>
@@ -64,7 +64,7 @@ by referencing the <code>id</code> of another drop container:</p>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-one"</span> [<span class="hljs-attr">cdkDropListConnectedTo</span>]=<span class="hljs-string">"['list-two']"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">cdkDropList</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list-two"</span> [<span class="hljs-attr">cdkDropListConnectedTo</span>]=<span class="hljs-string">"['list-one']"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-<p translation-result="on">如果有一个未知数量的连接拖放列表，你也可以使用 <code>cdkDropListGroup</code> 指令来自动建立连接。注意，添加到组下的所有新 <code>cdkDropList</code> 都会自动和其它的列表连接起来。</p><p translation-origin="off">If you have an unknown number of connected drop lists, you can use the <code>cdkDropListGroup</code> directive
+<p translation-result="on">如果有一個未知數量的連線拖放清單，你也可以使用 <code>cdkDropListGroup</code> 指令來自動建立連線。注意，新增到組下的所有新 <code>cdkDropList</code> 都會自動和其它的清單連線起來。</p><p translation-origin="off">If you have an unknown number of connected drop lists, you can use the <code>cdkDropListGroup</code> directive
 to set up the connection automatically. Note that any new <code>cdkDropList</code> that is added under a group
 will be connected to all other lists automatically.</p>
 
@@ -77,15 +77,15 @@ will be connected to all other lists automatically.</p>
 
 
         <h3 id="attaching-data" class="docs-header-link" translation-result="on">
-          <span header-link="附着数据"></span>
-          附着数据
+          <span header-link="附著資料"></span>
+          附著資料
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="attaching-data"></span>
           Attaching data
         </h3>
       
         
-      <p translation-result="on">你可以把通过设置 <code>cdkDragData</code> 或 <code>cdkDropListData</code> 来分别让 <code>cdkDrag</code> 和 <code>cdkDropList</code> 与任意数据关联起来。这两个指令触发的事件都包含这些数据，可以让你轻松地识别出拖放的来源。</p><p translation-origin="off">You can associate some arbitrary data with both <code>cdkDrag</code> and <code>cdkDropList</code> by setting <code>cdkDragData</code>
+      <p translation-result="on">你可以把透過設定 <code>cdkDragData</code> 或 <code>cdkDropListData</code> 來分別讓 <code>cdkDrag</code> 和 <code>cdkDropList</code> 與任意資料關聯起來。這兩個指令觸發的事件都包含這些資料，可以讓你輕鬆地識別出拖放的來源。</p><p translation-origin="off">You can associate some arbitrary data with both <code>cdkDrag</code> and <code>cdkDropList</code> by setting <code>cdkDragData</code>
 or <code>cdkDropListData</code>, respectively. Events fired from both directives include this data, allowing
 you to easily identify the origin of the drag or drop interaction.</p>
 
@@ -95,99 +95,99 @@ you to easily identify the origin of the drag or drop interaction.</p>
 </code></pre>
 
         <h3 id="styling" class="docs-header-link" translation-result="on">
-          <span header-link="样式"></span>
-          样式
+          <span header-link="樣式"></span>
+          樣式
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="styling"></span>
           Styling
         </h3>
       
         
-      <p translation-result="on"><code>cdkDrag</code> 和 <code>cdkDropList</code> 指令只包含使用此功能时必需的那些样式。然后，该应用可以通过那些由指令添加的 CSS 类来定制这些元素：</p><p translation-origin="off">The <code>cdkDrag</code> and <code>cdkDropList</code> directive include only those styles strictly necessary for
+      <p translation-result="on"><code>cdkDrag</code> 和 <code>cdkDropList</code> 指令只包含使用此功能時必需的那些樣式。然後，該應用可以透過那些由指令新增的 CSS 類來定製這些元素：</p><p translation-origin="off">The <code>cdkDrag</code> and <code>cdkDropList</code> directive include only those styles strictly necessary for
 functionality. The application can then customize the elements by styling CSS classes added
 by the directives:</p>
 
 <table>
 <thead>
 <tr>
-<th><nt-wrapper translation-result="on">选择器</nt-wrapper><nt-wrapper translation-origin="off">Selector</nt-wrapper></th>
-<th><nt-wrapper translation-result="on">说明</nt-wrapper><nt-wrapper translation-origin="off">Description</nt-wrapper></th>
+<th><nt-wrapper translation-result="on">選擇器</nt-wrapper><nt-wrapper translation-origin="off">Selector</nt-wrapper></th>
+<th><nt-wrapper translation-result="on">說明</nt-wrapper><nt-wrapper translation-origin="off">Description</nt-wrapper></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>.cdk-drop-list</code></td>
-<td><nt-wrapper translation-result="on">对应于 <code>cdkDropList</code> 容器。</nt-wrapper><nt-wrapper translation-origin="off">Corresponds to the <code>cdkDropList</code> container.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">對應於 <code>cdkDropList</code> 容器。</nt-wrapper><nt-wrapper translation-origin="off">Corresponds to the <code>cdkDropList</code> container.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drag</code></td>
-<td><nt-wrapper translation-result="on">对应于 <code>cdkDrag</code> 实例。</nt-wrapper><nt-wrapper translation-origin="off">Corresponds to a <code>cdkDrag</code> instance.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">對應於 <code>cdkDrag</code> 實例。</nt-wrapper><nt-wrapper translation-origin="off">Corresponds to a <code>cdkDrag</code> instance.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drag-disabled</code></td>
-<td><nt-wrapper translation-result="on">要添加到已禁用的 <code>cdkDrag</code> 上的类。</nt-wrapper><nt-wrapper translation-origin="off">Class that is added to a disabled <code>cdkDrag</code>.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">要新增到已停用的 <code>cdkDrag</code> 上的類。</nt-wrapper><nt-wrapper translation-origin="off">Class that is added to a disabled <code>cdkDrag</code>.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drag-handle</code></td>
-<td><nt-wrapper translation-result="on">要添加到 cdkDragHandle 指令的宿主元素上的类。</nt-wrapper><nt-wrapper translation-origin="off">Class that is added to the host element of the cdkDragHandle directive.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">要新增到 cdkDragHandle 指令的宿主元素上的類。</nt-wrapper><nt-wrapper translation-origin="off">Class that is added to the host element of the cdkDragHandle directive.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drag-preview</code></td>
-<td><nt-wrapper translation-result="on">这是当用户在可排序列表中拖动一个条目时，要渲染在用户光标附近的元素。默认情况下，该元素看上去和被拖动的元素完全一样。</nt-wrapper><nt-wrapper translation-origin="off">This is the element that will be rendered next to the user's cursor as they're dragging an item in a sortable list. By default the element looks exactly like the element that is being dragged.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">這是當用戶在可排序清單中拖動一個條目時，要渲染在使用者游標附近的元素。預設情況下，該元素看上去和被拖動的元素完全一樣。</nt-wrapper><nt-wrapper translation-origin="off">This is the element that will be rendered next to the user's cursor as they're dragging an item in a sortable list. By default the element looks exactly like the element that is being dragged.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drag-placeholder</code></td>
-<td><nt-wrapper translation-result="on">这是一个在拖入 <code>cdkDropList</code> 时要显示的元素，但不是真正的元素。默认情况下，它看上去和要排序的元素完全一样。</nt-wrapper><nt-wrapper translation-origin="off">This is element that will be shown instead of the real element as it's being dragged inside a <code>cdkDropList</code>. By default this will look exactly like the element that is being sorted.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">這是一個在拖入 <code>cdkDropList</code> 時要顯示的元素，但不是真正的元素。預設情況下，它看上去和要排序的元素完全一樣。</nt-wrapper><nt-wrapper translation-origin="off">This is element that will be shown instead of the real element as it's being dragged inside a <code>cdkDropList</code>. By default this will look exactly like the element that is being sorted.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drop-list-dragging</code></td>
-<td><nt-wrapper translation-result="on">当用户拖动条目时，添加到 <code>cdkDropList</code> 上的类。</nt-wrapper><nt-wrapper translation-origin="off">A class that is added to <code>cdkDropList</code> while the user is dragging an item.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">當用戶拖動條目時，新增到 <code>cdkDropList</code> 上的類。</nt-wrapper><nt-wrapper translation-origin="off">A class that is added to <code>cdkDropList</code> while the user is dragging an item.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drop-list-disabled</code></td>
-<td><nt-wrapper translation-result="on">当 <code>cdkDropList</code> 禁用时添加的一个类。</nt-wrapper><nt-wrapper translation-origin="off">A class that is added to <code>cdkDropList</code> when it is disabled.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">當 <code>cdkDropList</code> 停用時新增的一個類。</nt-wrapper><nt-wrapper translation-origin="off">A class that is added to <code>cdkDropList</code> when it is disabled.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>.cdk-drop-list-receiving</code></td>
-<td><nt-wrapper translation-result="on">当 <code>cdkDropList</code> 可以接受某个拖动进关联拖放列表时，添加到 <code>cdkDropList</code> 上的类。</nt-wrapper><nt-wrapper translation-origin="off">A class that is added to <code>cdkDropList</code> when it can receive an item that is being dragged inside a connected drop list.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">當 <code>cdkDropList</code> 可以接受某個拖動進關聯拖放清單時，新增到 <code>cdkDropList</code> 上的類。</nt-wrapper><nt-wrapper translation-origin="off">A class that is added to <code>cdkDropList</code> when it can receive an item that is being dragged inside a connected drop list.</nt-wrapper></td>
 </tr>
 
 </tbody></table>
 
         <h3 id="animations" class="docs-header-link" translation-result="on">
-          <span header-link="动画"></span>
-          动画
+          <span header-link="動畫"></span>
+          動畫
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="animations"></span>
           Animations
         </h3>
       
         
-      <p translation-result="on">拖放模块既支持对列表中的元素进行排序时的动画，也支持用户将其拖放到列表中最终位置时的动画。要设置动画，你就必须定义一个以包含 <code>transform</code> 属性的 <code>transition</code>。动画中可以使用下列如下 CSS 类：</p><p translation-origin="off">The drag-and-drop module supports animations both while sorting an element inside a list, as well as
+      <p translation-result="on">拖放模組既支援對清單中的元素進行排序時的動畫，也支援使用者將其拖放到清單中最終位置時的動畫。要設定動畫，你就必須定義一個以包含 <code>transform</code> 屬性的 <code>transition</code>。動畫中可以使用下列如下 CSS 類：</p><p translation-origin="off">The drag-and-drop module supports animations both while sorting an element inside a list, as well as
 animating it from the position that the user dropped it to its final place in the list. To set up
 your animations, you have to define a <code>transition</code> that targets the <code>transform</code> property. The
 following classes can be used for animations:</p>
 
 <ul>
-<li><p translation-result="on"><code>.cdk-drag</code> - 如果你把 <code>transition</code> 添加到该类中，当用户在列表中进行排序时，它就会播放动画。</p><p translation-origin="off"><code>.cdk-drag</code> - If you add a <code>transition</code> to this class, it'll animate as the user is sorting
+<li><p translation-result="on"><code>.cdk-drag</code> - 如果你把 <code>transition</code> 新增到該類別中，當用戶在清單中進行排序時，它就會播放動畫。</p><p translation-origin="off"><code>.cdk-drag</code> - If you add a <code>transition</code> to this class, it'll animate as the user is sorting
   through a list.</p>
 
 </li>
-<li><p translation-result="on"><code>.cdk-drag-animating</code> - 当用户停止拖动时，该类就会添加到 <code>cdkDrag</code> 上。如果你给它添加了一个 <code>transition</code>，那么 CDK 就会把该元素从它的拖放位置动画到其在 <code>cdkDropList</code> 容器内的最终位置。</p><p translation-origin="off"><code>.cdk-drag-animating</code> - This class is added to a <code>cdkDrag</code> when the user has stopped dragging.
+<li><p translation-result="on"><code>.cdk-drag-animating</code> - 當用戶停止拖動時，該類別就會新增到 <code>cdkDrag</code> 上。如果你給它新增了一個 <code>transition</code>，那麼 CDK 就會把該元素從它的拖放位置動畫到其在 <code>cdkDropList</code> 容器內的最終位置。</p><p translation-origin="off"><code>.cdk-drag-animating</code> - This class is added to a <code>cdkDrag</code> when the user has stopped dragging.
   If you add a <code>transition</code> to it, the CDK will animate the element from its drop position to
   the final position inside the <code>cdkDropList</code> container.</p>
 
 </li>
 </ul>
-<p translation-result="on">动画示例：</p><p translation-origin="off">Example animations:</p>
+<p translation-result="on">動畫範例：</p><p translation-origin="off">Example animations:</p>
 
 <pre><code class="language-css"><span class="hljs-comment">/* Animate items as they're being sorted. */</span>
 <span class="hljs-selector-class">.cdk-drop-list-dragging</span> <span class="hljs-selector-class">.cdk-drag</span> {
@@ -201,15 +201,15 @@ following classes can be used for animations:</p>
 </code></pre>
 
         <h3 id="customizing-the-drag-area-using-a-handle" class="docs-header-link" translation-result="on">
-          <span header-link="使用拖动把手自定义拖曳区域"></span>
-          使用拖动把手自定义拖曳区域
+          <span header-link="使用拖動把手自定義拖曳區域"></span>
+          使用拖動把手自定義拖曳區域
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="customizing-the-drag-area-using-a-handle"></span>
           Customizing the drag area using a handle
         </h3>
       
         
-      <p translation-result="on">默认情况下，用户都可以拖动整个 <code>cdkDrag</code> 元素来移动它。如果要限制用户只能使用某个拖动把手元素，你可以把 <code>cdkDragHandle</code> 指令添加到 <code>cdkDrag</code> 内部的某个元素上。注意，你可以有任意多个 <code>cdkDragHandle</code> 元素：</p><p translation-origin="off">By default, the user can drag the entire <code>cdkDrag</code> element to move it around. If you want to
+      <p translation-result="on">預設情況下，使用者都可以拖動整個 <code>cdkDrag</code> 元素來移動它。如果要限制使用者只能使用某個拖動把手元素，你可以把 <code>cdkDragHandle</code> 指令新增到 <code>cdkDrag</code> 內部的某個元素上。注意，你可以有任意多個 <code>cdkDragHandle</code> 元素：</p><p translation-origin="off">By default, the user can drag the entire <code>cdkDrag</code> element to move it around. If you want to
 restrict the user to only be able to do so using a handle element, you can do it by adding the
 <code>cdkDragHandle</code> directive to an element inside of <code>cdkDrag</code>. Note that you can have as many
 <code>cdkDragHandle</code> elements as you want:</p>
@@ -218,23 +218,23 @@ restrict the user to only be able to do so using a handle element, you can do it
 
 
         <h3 id="customizing-the-drag-preview" class="docs-header-link" translation-result="on">
-          <span header-link="自定义拖动预览图"></span>
-          自定义拖动预览图
+          <span header-link="自定義拖動預覽圖"></span>
+          自定義拖動預覽圖
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="customizing-the-drag-preview"></span>
           Customizing the drag preview
         </h3>
       
         
-      <p translation-result="on">当拾起 <code>cdkDrag</code> 元素时，它会在拖动过程中创建一个可见的预览元素。默认情况下，这将是位于用户光标旁边的原始元素的克隆体。但是，通过由 <code>*cdkDragPreview</code> 提供的自定义模板，可以自定义此预览。
-使用此默认配置时，自定义预览不会匹配原始被拖动元素的大小，因为 CDK 不能对该元素的内容做任何假设。如果你希望匹配其大小，可以给输入参数 <code>matchSize</code> 传入 <code>true</code>。</p><p translation-origin="off">When a <code>cdkDrag</code> element is picked up, it will create a preview element visible while dragging.
+      <p translation-result="on">當拾起 <code>cdkDrag</code> 元素時，它會在拖動過程中建立一個可見的預覽元素。預設情況下，這將是位於使用者游標旁邊的原始元素的克隆體。但是，透過由 <code>*cdkDragPreview</code> 提供的自定義樣板，可以自定義此預覽。
+使用此預設設定時，自定義預覽不會對應原始被拖動元素的大小，因為 CDK 不能對該元素的內容做任何假設。如果你希望對應其大小，可以給輸入引數 <code>matchSize</code> 傳入 <code>true</code>。</p><p translation-origin="off">When a <code>cdkDrag</code> element is picked up, it will create a preview element visible while dragging.
 By default, this will be a clone of the original element positioned next to the user's cursor.
 This preview can be customized, though, by providing a custom template via <code>*cdkDragPreview</code>.
 Using the default configuration the custom preview won't match the size of the original dragged
 element, because the CDK doesn't make assumptions about the element's content. If you want the
 size to be matched, you can pass <code>true</code> to the <code>matchSize</code> input.</p>
 
-<p translation-result="on">注意，克隆元素时会删除它的 <code>id</code> 属性，以免在页面中拥有多个具有相同 <code>id</code> 的元素。这会导致任何以此 <code>id</code> 为目标的 CSS 都不能应用在这个预览元素上。</p><p translation-origin="off">Note that the cloned element will remove its <code>id</code> attribute in order to avoid having multiple
+<p translation-result="on">注意，克隆元素時會刪除它的 <code>id</code> 屬性，以免在頁面中擁有多個具有相同 <code>id</code> 的元素。這會導致任何以此 <code>id</code> 為目標的 CSS 都不能應用在這個預覽元素上。</p><p translation-origin="off">Note that the cloned element will remove its <code>id</code> attribute in order to avoid having multiple
 elements with the same <code>id</code> on the page. This will cause any CSS that targets that <code>id</code> not
 to be applied.</p>
 
@@ -242,15 +242,15 @@ to be applied.</p>
 
 
         <h3 id="drag-preview-insertion-point" class="docs-header-link" translation-result="on">
-          <span header-link="拖动预览器插入点"></span>
-          拖动预览器插入点
+          <span header-link="拖動預覽器插入點"></span>
+          拖動預覽器插入點
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="drag-preview-insertion-point"></span>
           Drag preview insertion point
         </h3>
       
         
-      <p translation-result="on">默认情况下，<code>cdkDrag</code> 的预览器将插入到页面的 <code>&lt;body&gt;</code> 中，以避免出现 <code>z-index</code> 和 <code>overflow: hidden</code> 相关的问题。在某些情况下，这可能是无效的，因为此预览器不会保留其继承的样式。你可以使用 cdkDrag 上的 <code>cdkDragPreviewContainer</code> 输入来控制插入预览器的 <code>cdkDrag</code> 。可能的值为：</p><p translation-origin="off">By default, the preview of a <code>cdkDrag</code> will be inserted into the <code>&lt;body&gt;</code> of the page in order to
+      <p translation-result="on">預設情況下，<code>cdkDrag</code> 的預覽器將插入到頁面的 <code>&lt;body&gt;</code> 中，以避免出現 <code>z-index</code> 和 <code>overflow: hidden</code> 相關的問題。在某些情況下，這可能是無效的，因為此預覽器不會保留其繼承的樣式。你可以使用 cdkDrag 上的 <code>cdkDragPreviewContainer</code> 輸入來控制插入預覽器的 <code>cdkDrag</code> 。可能的值為：</p><p translation-origin="off">By default, the preview of a <code>cdkDrag</code> will be inserted into the <code>&lt;body&gt;</code> of the page in order to
 avoid issues with <code>z-index</code> and <code>overflow: hidden</code>. This may not be desireable in some cases,
 because the preview won't retain its inherited styles. You can control where the preview is inserted
 using the <code>cdkDragPreviewContainer</code> input on <code>cdkDrag</code>. The possible values are:</p>
@@ -259,45 +259,45 @@ using the <code>cdkDragPreviewContainer</code> input on <code>cdkDrag</code>. Th
 <thead>
 <tr>
 <th><nt-wrapper translation-result="on">值</nt-wrapper><nt-wrapper translation-origin="off">Value</nt-wrapper></th>
-<th><nt-wrapper translation-result="on">说明</nt-wrapper><nt-wrapper translation-origin="off">Description</nt-wrapper></th>
-<th><nt-wrapper translation-result="on">优点</nt-wrapper><nt-wrapper translation-origin="off">Advantages</nt-wrapper></th>
-<th><nt-wrapper translation-result="on">缺点</nt-wrapper><nt-wrapper translation-origin="off">Disadvantages</nt-wrapper></th>
+<th><nt-wrapper translation-result="on">說明</nt-wrapper><nt-wrapper translation-origin="off">Description</nt-wrapper></th>
+<th><nt-wrapper translation-result="on">優點</nt-wrapper><nt-wrapper translation-origin="off">Advantages</nt-wrapper></th>
+<th><nt-wrapper translation-result="on">缺點</nt-wrapper><nt-wrapper translation-origin="off">Disadvantages</nt-wrapper></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>global</code></td>
-<td><nt-wrapper translation-result="on">默认值。预览器被插入到 <code>&lt;body&gt;</code> 或最近的 Shadow Root 中。</nt-wrapper><nt-wrapper translation-origin="off">Default value. Preview is inserted into the <code>&lt;body&gt;</code> or the closest shadow root.</nt-wrapper></td>
-<td><nt-wrapper translation-result="on">预览器不会受到 <code>z-index</code> 或 <code>overflow: hidden</code> 的影响。它也不会影响 <code>:nth-child</code> 选择器和 flex 布局。</nt-wrapper><nt-wrapper translation-origin="off">Preview won't be affected by <code>z-index</code> or <code>overflow: hidden</code>. It also won't affect <code>:nth-child</code> selectors and flex layouts.</nt-wrapper></td>
-<td><nt-wrapper translation-result="on">不保留继承的样式。</nt-wrapper><nt-wrapper translation-origin="off">Doesn't retain inherited styles.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">預設值。預覽器被插入到 <code>&lt;body&gt;</code> 或最近的 Shadow Root 中。</nt-wrapper><nt-wrapper translation-origin="off">Default value. Preview is inserted into the <code>&lt;body&gt;</code> or the closest shadow root.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">預覽器不會受到 <code>z-index</code> 或 <code>overflow: hidden</code> 的影響。它也不會影響 <code>:nth-child</code> 選擇器和 flex 佈局。</nt-wrapper><nt-wrapper translation-origin="off">Preview won't be affected by <code>z-index</code> or <code>overflow: hidden</code>. It also won't affect <code>:nth-child</code> selectors and flex layouts.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">不保留繼承的樣式。</nt-wrapper><nt-wrapper translation-origin="off">Doesn't retain inherited styles.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><code>parent</code></td>
-<td><nt-wrapper translation-result="on">预览器被插入到被拖动条目的父节点内。</nt-wrapper><nt-wrapper translation-origin="off">Preview is inserted inside the parent of the item that is being dragged.</nt-wrapper></td>
-<td><nt-wrapper translation-result="on">预览器继承与拖动条目相同的样式。</nt-wrapper><nt-wrapper translation-origin="off">Preview inherits the same styles as the dragged item.</nt-wrapper></td>
-<td><nt-wrapper translation-result="on">由于 <code>z-index</code> 的影响，预览器可能会被 <code>overflow: hidden</code> 裁剪或被放置在其他元素下。此外，它会影响 <code>:nth-child</code> 选择器和一些 flex 布局。</nt-wrapper><nt-wrapper translation-origin="off">Preview may be clipped by <code>overflow: hidden</code> or be placed under other elements due to <code>z-index</code>. Furthermore, it can affect <code>:nth-child</code> selectors and some flex layouts.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">預覽器被插入到被拖動條目的父節點內。</nt-wrapper><nt-wrapper translation-origin="off">Preview is inserted inside the parent of the item that is being dragged.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">預覽器繼承與拖動條目相同的樣式。</nt-wrapper><nt-wrapper translation-origin="off">Preview inherits the same styles as the dragged item.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">由於 <code>z-index</code> 的影響，預覽器可能會被 <code>overflow: hidden</code> 裁剪或被放置在其他元素下。此外，它會影響 <code>:nth-child</code> 選擇器和一些 flex 佈局。</nt-wrapper><nt-wrapper translation-origin="off">Preview may be clipped by <code>overflow: hidden</code> or be placed under other elements due to <code>z-index</code>. Furthermore, it can affect <code>:nth-child</code> selectors and some flex layouts.</nt-wrapper></td>
 </tr>
 
 <tr>
 <td><nt-wrapper translation-result="on"><code>ElementRef</code> 或 <code>HTMLElement</code></nt-wrapper><nt-wrapper translation-origin="off"><code>ElementRef</code> or <code>HTMLElement</code></nt-wrapper></td>
-<td><nt-wrapper translation-result="on">预览器将插入到指定的元素内部。</nt-wrapper><nt-wrapper translation-origin="off">Preview will be inserted into the specified element.</nt-wrapper></td>
-<td><nt-wrapper translation-result="on">预览器从指定的容器元素继承样式。</nt-wrapper><nt-wrapper translation-origin="off">Preview inherits styles from the specified container element.</nt-wrapper></td>
-<td><nt-wrapper translation-result="on">由于 <code>z-index</code> 的影响，预览器可能会被 <code>overflow: hidden</code> 裁剪或被放置在其他元素下。此外，它会影响 <code>:nth-child</code> 选择器和一些 flex 布局。</nt-wrapper><nt-wrapper translation-origin="off">Preview may be clipped by <code>overflow: hidden</code> or be placed under other elements due to <code>z-index</code>. Furthermore, it can affect <code>:nth-child</code> selectors and some flex layouts.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">預覽器將插入到指定的元素內部。</nt-wrapper><nt-wrapper translation-origin="off">Preview will be inserted into the specified element.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">預覽器從指定的容器元素繼承樣式。</nt-wrapper><nt-wrapper translation-origin="off">Preview inherits styles from the specified container element.</nt-wrapper></td>
+<td><nt-wrapper translation-result="on">由於 <code>z-index</code> 的影響，預覽器可能會被 <code>overflow: hidden</code> 裁剪或被放置在其他元素下。此外，它會影響 <code>:nth-child</code> 選擇器和一些 flex 佈局。</nt-wrapper><nt-wrapper translation-origin="off">Preview may be clipped by <code>overflow: hidden</code> or be placed under other elements due to <code>z-index</code>. Furthermore, it can affect <code>:nth-child</code> selectors and some flex layouts.</nt-wrapper></td>
 </tr>
 
 </tbody></table>
 
         <h3 id="customizing-the-drag-placeholder" class="docs-header-link" translation-result="on">
-          <span header-link="自定义拖动占位符"></span>
-          自定义拖动占位符
+          <span header-link="自定義拖動佔位符"></span>
+          自定義拖動佔位符
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="customizing-the-drag-placeholder"></span>
           Customizing the drag placeholder
         </h3>
       
         
-      <p translation-result="on">在拖动 <code>cdkDrag</code> 元素的同时，CDK 会创建一个占位符元素，它会显示在要放置的位置上。默认的占位符是被拖元素的克隆体，但你可以使用 <code>*cdkDragPlaceholder</code> 指令来把它替换为自定义的版本：</p><p translation-origin="off">While a <code>cdkDrag</code> element is being dragged, the CDK will create a placeholder element that will
+      <p translation-result="on">在拖動 <code>cdkDrag</code> 元素的同時，CDK 會建立一個佔位符元素，它會顯示在要放置的位置上。預設的佔位符是被拖元素的克隆體，但你可以使用 <code>*cdkDragPlaceholder</code> 指令來把它替換為自定義的版本：</p><p translation-origin="off">While a <code>cdkDrag</code> element is being dragged, the CDK will create a placeholder element that will
 show where it will be placed when it's dropped. By default the placeholder is a clone of the element
 that is being dragged, however you can replace it with a custom one using the <code>*cdkDragPlaceholder</code>
 directive:</p>
@@ -314,22 +314,22 @@ directive:</p>
         </h3>
       
         
-      <p translation-result="on">默认情况下，<code>cdkDropList</code> 指令假设列表是垂直的。可以把 <code>orientation</code> 属性设置为 <code>"horizontal"</code> 来改变它。</p><p translation-origin="off">The <code>cdkDropList</code> directive assumes that lists are vertical by default. This can be
+      <p translation-result="on">預設情況下，<code>cdkDropList</code> 指令假設清單是垂直的。可以把 <code>orientation</code> 屬性設定為 <code>"horizontal"</code> 來改變它。</p><p translation-origin="off">The <code>cdkDropList</code> directive assumes that lists are vertical by default. This can be
 changed by setting the <code>orientation</code> property to <code>"horizontal"</code>.</p>
 
 <div material-docs-example="cdk-drag-drop-horizontal-sorting"></div>
 
 
         <h3 id="restricting-movement-within-an-element" class="docs-header-link" translation-result="on">
-          <span header-link="把移动限制在某个元素内部"></span>
-          把移动限制在某个元素内部
+          <span header-link="把移動限制在某個元素內部"></span>
+          把移動限制在某個元素內部
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="restricting-movement-within-an-element"></span>
           Restricting movement within an element
         </h3>
       
         
-      <p translation-result="on">如果想阻止用户把某个 <code>cdkDrag</code> 元素拖到另一个元素外部，你可以把一个 CSS 选择器传递给 <code>cdkDragBoundary</code> 属性。该属性的工作原理是接受一个选择器并查找该 DOM，直到找到一个与之匹配的元素。如果找到了匹配项，它就会用作该元素无法拖出的边界。当 <code>cdkDrag</code> 位于 <code>cdkDropList</code> 中时，也可以用 <code>cdkDragBoundary</code> 来达到相同效果。</p><p translation-origin="off">If you want to stop the user from being able to drag a <code>cdkDrag</code> element outside of another element,
+      <p translation-result="on">如果想阻止使用者把某個 <code>cdkDrag</code> 元素拖到另一個元素外部，你可以把一個 CSS 選擇器傳遞給 <code>cdkDragBoundary</code> 屬性。該屬性的工作原理是接受一個選擇器並查詢該 DOM，直到找到一個與之對應的元素。如果找到了對應項，它就會用作該元素無法拖出的邊界。當 <code>cdkDrag</code> 位於 <code>cdkDropList</code> 中時，也可以用 <code>cdkDragBoundary</code> 來達到相同效果。</p><p translation-origin="off">If you want to stop the user from being able to drag a <code>cdkDrag</code> element outside of another element,
 you can pass a CSS selector to the <code>cdkDragBoundary</code> attribute. The attribute works by accepting a
 selector and looking up the DOM until it finds an element that matches it. If a match is found,
 it'll be used as the boundary outside of which the element can't be dragged. <code>cdkDragBoundary</code> can
@@ -339,15 +339,15 @@ also be used when <code>cdkDrag</code> is placed inside a <code>cdkDropList</cod
 
 
         <h3 id="restricting-movement-along-an-axis" class="docs-header-link" translation-result="on">
-          <span header-link="限定沿轴的移动"></span>
-          限定沿轴的移动
+          <span header-link="限定沿軸的移動"></span>
+          限定沿軸的移動
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="restricting-movement-along-an-axis"></span>
           Restricting movement along an axis
         </h3>
       
         
-      <p translation-result="on">默认情况下，<code>cdkDrag</code> 允许所有方向的自由移动。要想限定只能沿特定的轴移动，可以把 <code>cdkDrag</code> 上的 <code>cdkDragLockAxis</code> 或 <code>cdkDropList</code> 上的 <code>lockAxis</code> 设置为 <code>"x"</code> 或 <code>"y"</code>。</p><p translation-origin="off">By default, <code>cdkDrag</code> allows free movement in all directions. To restrict dragging to a
+      <p translation-result="on">預設情況下，<code>cdkDrag</code> 允許所有方向的自由移動。要想限定只能沿特定的軸移動，可以把 <code>cdkDrag</code> 上的 <code>cdkDragLockAxis</code> 或 <code>cdkDropList</code> 上的 <code>lockAxis</code> 設定為 <code>"x"</code> 或 <code>"y"</code>。</p><p translation-origin="off">By default, <code>cdkDrag</code> allows free movement in all directions. To restrict dragging to a
 specific axis, you can set <code>cdkDragLockAxis</code> on <code>cdkDrag</code> or <code>cdkDropListLockAxis</code> on <code>cdkDropList</code>
 to either <code>"x"</code> or <code>"y"</code>.</p>
 
@@ -355,15 +355,15 @@ to either <code>"x"</code> or <code>"y"</code>.</p>
 
 
         <h3 id="alternate-drag-root-element" class="docs-header-link" translation-result="on">
-          <span header-link="替代拖动根元素"></span>
-          替代拖动根元素
+          <span header-link="替代拖動根元素"></span>
+          替代拖動根元素
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="alternate-drag-root-element"></span>
           Alternate drag root element
         </h3>
       
         
-      <p translation-result="on">如果你想要把某个元素做成可拖动的，但却无法直接访问它，你可以借助 <code>cdkDragRootElement</code> 属性。该属性的工作原理是接受一个选择器并查找 DOM，直到它找到一个与该选择器匹配的元素。如果找到了某个元素，它就会成为用户在拖动时所移动的替代元素。这对于让对话框可拖动之类的场景非常有用。</p><p translation-origin="off">If there's an element that you want to make draggable, but you don't have direct access to it, you
+      <p translation-result="on">如果你想要把某個元素做成可拖動的，但卻無法直接訪問它，你可以藉助 <code>cdkDragRootElement</code> 屬性。該屬性的工作原理是接受一個選擇器並查詢 DOM，直到它找到一個與該選擇器對應的元素。如果找到了某個元素，它就會成為使用者在拖動時所移動的替代元素。這對於讓對話框可拖動之類的場景非常有用。</p><p translation-origin="off">If there's an element that you want to make draggable, but you don't have direct access to it, you
 can use the <code>cdkDragRootElement</code> attribute. The attribute works by accepting a selector and looking
 up the DOM until it finds an element that matches the selector. If an element is found, it'll become
 the element that is moved as the user is dragging. This is useful for cases like making a dialog
@@ -373,15 +373,15 @@ draggable.</p>
 
 
         <h3 id="controlling-which-items-can-be-moved-into-a-container" class="docs-header-link" translation-result="on">
-          <span header-link="控制哪些条目可以移入容器"></span>
-          控制哪些条目可以移入容器
+          <span header-link="控制哪些條目可以移入容器"></span>
+          控制哪些條目可以移入容器
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="controlling-which-items-can-be-moved-into-a-container"></span>
           Controlling which items can be moved into a container
         </h3>
       
         
-      <p translation-result="on">默认情况下，一个容器中的所有 <code>cdkDrag</code> 项都可以移动到另一个相连的容器中。如果你想对可拖放的条目进行更精细的控制，你可以使用 <code>cdkDropListEnterPredicate</code>，它会在条目即将进入新容器时调用。根据它是返回的是 <code>true</code> 还是 <code>false</code>，可以允许或不允许该条目进入新容器。</p><p translation-origin="off">By default, all <code>cdkDrag</code> items from one container can be moved into another connected container.
+      <p translation-result="on">預設情況下，一個容器中的所有 <code>cdkDrag</code> 項都可以移動到另一個相連的容器中。如果你想對可拖放的條目進行更精細的控制，你可以使用 <code>cdkDropListEnterPredicate</code>，它會在條目即將進入新容器時調用。根據它是回傳的是 <code>true</code> 還是 <code>false</code>，可以允許或不允許該條目進入新容器。</p><p translation-origin="off">By default, all <code>cdkDrag</code> items from one container can be moved into another connected container.
 If you want more fine-grained control over which items can be dropped, you can use the
 <code>cdkDropListEnterPredicate</code> which will be called whenever an item is about to enter a
 new container. Depending on whether the predicate returns <code>true</code> or <code>false</code>, the item may or may not
@@ -391,15 +391,15 @@ be allowed into the new container.</p>
 
 
         <h3 id="disabled-dragging" class="docs-header-link" translation-result="on">
-          <span header-link="禁用拖动功能"></span>
-          禁用拖动功能
+          <span header-link="停用拖動功能"></span>
+          停用拖動功能
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="disabled-dragging"></span>
           Disabled dragging
         </h3>
       
         
-      <p translation-result="on">如果要对特定的条目禁用拖曳，你可以在 <code>cdkDrag</code> 条目上设置输入属性 <code>cdkDragDisabled</code>。你还可以使用 <code>cdkDropList</code> 上的输入属性 <code>cdkDropListDisabled</code> 来禁用整个列表或 <code>cdkDragHandle</code> 上的 <code>cdkDragHandleDisabled</code> 来进行特定的拖动手柄。</p><p translation-origin="off">If you want to disable dragging for a particular drag item, you can do so by setting the
+      <p translation-result="on">如果要對特定的條目停用拖曳，你可以在 <code>cdkDrag</code> 條目上設定輸入屬性 <code>cdkDragDisabled</code>。你還可以使用 <code>cdkDropList</code> 上的輸入屬性 <code>cdkDropListDisabled</code> 來停用整個清單或 <code>cdkDragHandle</code> 上的 <code>cdkDragHandleDisabled</code> 來進行特定的拖動手柄。</p><p translation-origin="off">If you want to disable dragging for a particular drag item, you can do so by setting the
 <code>cdkDragDisabled</code> input on a <code>cdkDrag</code> item. Furthermore, you can disable an entire list
 using the <code>cdkDropListDisabled</code> input on a <code>cdkDropList</code> or a particular handle via
 <code>cdkDragHandleDisabled</code> on <code>cdkDragHandle</code>.</p>
@@ -408,15 +408,15 @@ using the <code>cdkDropListDisabled</code> input on a <code>cdkDropList</code> o
 
 
         <h3 id="disabled-sorting" class="docs-header-link" translation-result="on">
-          <span header-link="禁用排序"></span>
-          禁用排序
+          <span header-link="停用排序"></span>
+          停用排序
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="disabled-sorting"></span>
           Disabled sorting
         </h3>
       
         
-      <p translation-result="on">某些情况下，可拖动的条目可以从一个列表拖到另一个列表中，但用户不应该在源列表中对它们进行排序。对于这些情况，你可以设置 <code>cdkDropListSortingDisabled</code> 输入，它会阻止 <code>cdkDropList</code> 保留被拖动条目在源列表中的初始位置（如果用户决定退回该条目）。</p><p translation-origin="off">There are cases where draggable items can be dragged out of one list into another, however
+      <p translation-result="on">某些情況下，可拖動的條目可以從一個清單拖到另一個清單中，但使用者不應該在源清單中對它們進行排序。對於這些情況，你可以設定 <code>cdkDropListSortingDisabled</code> 輸入，它會阻止 <code>cdkDropList</code> 保留被拖動條目在源清單中的初始位置（如果使用者決定退回該條目）。</p><p translation-origin="off">There are cases where draggable items can be dragged out of one list into another, however
 the user shouldn't be able to sort them within the source list. For these cases you can set the
 <code>cdkDropListSortingDisabled</code> input which will prevent the items in a <code>cdkDropList</code> from sorting,
 in addition to preserving the dragged item's initial position in the source list, if the user
@@ -426,15 +426,15 @@ decides to return the item.</p>
 
 
         <h3 id="delayed-dragging" class="docs-header-link" translation-result="on">
-          <span header-link="延迟拖动"></span>
-          延迟拖动
+          <span header-link="延遲拖動"></span>
+          延遲拖動
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="delayed-dragging"></span>
           Delayed dragging
         </h3>
       
         
-      <p translation-result="on">默认情况下，只要用户把指针放在 <code>cdkDrag</code>，就会启动拖动序列。这种对于触摸设备上的全屏可拖动元素等情况可能并不理想，因为用户在滚动页面时可能会意外触发拖动。对于这类情况，你可以使用输入属性 <code>cdkDragStartDelay</code> 来延迟拖动，它会先等待用户按住指定的毫秒数之后才开始移动此元素。</p><p translation-origin="off">By default as soon as the user puts their pointer down on a <code>cdkDrag</code>, the dragging sequence will
+      <p translation-result="on">預設情況下，只要使用者把指標放在 <code>cdkDrag</code>，就會啟動拖動序列。這種對於觸控裝置上的全屏可拖動元素等情況可能並不理想，因為使用者在捲動頁面時可能會意外觸發拖動。對於這類情況，你可以使用輸入屬性 <code>cdkDragStartDelay</code> 來延遲拖動，它會先等待使用者按住指定的毫秒數之後才開始移動此元素。</p><p translation-origin="off">By default as soon as the user puts their pointer down on a <code>cdkDrag</code>, the dragging sequence will
 be started. This might not be desirable in cases like fullscreen draggable elements on touch
 devices where the user might accidentally trigger a drag as they're scrolling the page. For
 cases like these you can delay the dragging sequence using the <code>cdkDragStartDelay</code> input which
@@ -445,15 +445,15 @@ moving the element.</p>
 
 
         <h3 id="changing-the-standalone-drag-position" class="docs-header-link" translation-result="on">
-          <span header-link="改变独立的拖动位置"></span>
-          改变独立的拖动位置
+          <span header-link="改變獨立的拖動位置"></span>
+          改變獨立的拖動位置
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="changing-the-standalone-drag-position"></span>
           Changing the standalone drag position
         </h3>
       
         
-      <p translation-result="on">默认情况下，独立的 <code>cdkDrag</code> 元素只有当用户手动移动时，才会从其常规 DOM 位置移开。通过输入属性 <code>cdkDragFreeDragPosition</code> 可以显式设置该元素的位置。例如，应用程序通常会这样做：当用户导航离开后，自动还原可拖动对象的位置，然后返回。</p><p translation-origin="off">By default, standalone <code>cdkDrag</code> elements move from their normal DOM position only when manually
+      <p translation-result="on">預設情況下，獨立的 <code>cdkDrag</code> 元素只有當用戶手動移動時，才會從其常規 DOM 位置移開。透過輸入屬性 <code>cdkDragFreeDragPosition</code> 可以顯式設定該元素的位置。例如，應用程式通常會這樣做：當用戶導向離開後，自動還原可拖動物件的位置，然後回傳。</p><p translation-origin="off">By default, standalone <code>cdkDrag</code> elements move from their normal DOM position only when manually
 moved by a user. The element's position can be explicitly set, however, via the
 <code>cdkDragFreeDragPosition</code> input. Applications commonly use this, for example, to restore a
 draggable's position after a user has navigated away and then returned.</p>
@@ -462,15 +462,15 @@ draggable's position after a user has navigated away and then returned.</p>
 
 
         <h3 id="controlling-whether-an-item-can-be-sorted-into-a-particular-index" class="docs-header-link" translation-result="on">
-          <span header-link="控制是否可以把一个条目排序到一个特定的序号上"></span>
-          控制是否可以把一个条目排序到一个特定的序号上
+          <span header-link="控制是否可以把一個條目排序到一個特定的序號上"></span>
+          控制是否可以把一個條目排序到一個特定的序號上
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="controlling-whether-an-item-can-be-sorted-into-a-particular-index"></span>
           Controlling whether an item can be sorted into a particular index
         </h3>
       
         
-      <p translation-result="on">默认情况下，<code>cdkDrag</code> 的条目可以放到 <code>cdkDropList</code> 中的任意位置（序号）上。你可以通过设置 <code>cdkDropListSortPredicate</code> 来改变这种行为。每当一个条目要移到一个新的序号上时，就会调用一个谓词函数。如果该谓词返回 <code>true</code>，则该项将被移入新序号，否则会保持当前位置。</p><p translation-origin="off"><code>cdkDrag</code> items can be sorted into any position inside of a <code>cdkDropList</code> by default. You can change
+      <p translation-result="on">預設情況下，<code>cdkDrag</code> 的條目可以放到 <code>cdkDropList</code> 中的任意位置（序號）上。你可以透過設定 <code>cdkDropListSortPredicate</code> 來改變這種行為。每當一個條目要移到一個新的序號上時，就會呼叫一個謂詞函式。如果該謂詞回傳 <code>true</code>，則該項將被移入新序號，否則會保持當前位置。</p><p translation-origin="off"><code>cdkDrag</code> items can be sorted into any position inside of a <code>cdkDropList</code> by default. You can change
 this behavior by setting a <code>cdkDropListSortPredicate</code>. The predicate function will be called
 whenever an item is about to be moved into a new index. If the predicate returns <code>true</code>, the
 item will be moved into the new index, otherwise it will keep its current position.</p>

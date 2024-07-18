@@ -12,7 +12,7 @@
 <span class="hljs-comment">/**
  * Node for to-do item
  *
- * 待办事项的节点
+ * 待辦事項的節點
  *
  */</span>
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TodoItemNode</span> </span>{
@@ -23,7 +23,7 @@
 <span class="hljs-comment">/**
  * Flat to-do item node with expandable and level information
  *
- * 具有可扩展和级别信息的平面待办事项节点
+ * 具有可擴充套件和級別訊息的平面待辦事項節點
  *
  */</span>
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TodoItemFlatNode</span> </span>{
@@ -35,7 +35,7 @@
 <span class="hljs-comment">/**
  * The Json object for to-do list data.
  *
- * 待办事项列表数据的 Json 对象。
+ * 待辦事項清單資料的 Json 物件。
  *
  */</span>
 <span class="hljs-keyword">const</span> TREE_DATA = {
@@ -57,7 +57,7 @@
  * Each node in Json object represents a to-do item or a category.
  * If a node is a category, it has children items and new items can be added under the category.
  *
- * 检查列表数据库，它可以构建一个树状结构的 Json 对象。 Json 对象中的每个节点代表一个待办事项或一个类别。如果一个节点是一个类别，它有子条目，并且可以在该类别下添加新条目。
+ * 檢查清單資料庫，它可以建立一個樹狀結構的 Json 物件。 Json 物件中的每個節點代表一個待辦事項或一個類別。如果一個節點是一個類別，它有子條目，並且可以在該類別別下新增新條目。
  *
  */</span>
 <span class="hljs-meta">@Injectable</span>()
@@ -85,7 +85,7 @@
    * Build the file structure tree. The `value` is the Json object, or a sub-tree of a Json object.
    * The return value is the list of `TodoItemNode`.
    *
-   * 构建文件结构树。该 `value` 是 Json 对象，或 Json 对象的子树。返回值是 `TodoItemNode` 的列表。
+   * 建立檔案結構樹。該 `value` 是 Json 物件，或 Json 物件的子樹。回傳值是 `TodoItemNode` 的清單。
    *
    */</span>
   buildFileTree(obj: {[key: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">any</span>}, <span class="hljs-attr">level</span>: <span class="hljs-built_in">number</span>): TodoItemNode[] {
@@ -109,7 +109,7 @@
   <span class="hljs-comment">/**
    * Add an item to to-do list
    *
-   * 将条目添加到待办事项列表
+   * 將條目新增到待辦事項清單
    *
    */</span>
   <span class="hljs-function"><span class="hljs-title">insertItem</span>(<span class="hljs-params">parent: TodoItemNode, name: <span class="hljs-built_in">string</span></span>)</span> {
@@ -147,7 +147,7 @@
   <span class="hljs-comment">/**
    * Map from flat node to nested node. This helps us finding the nested node to be modified
    *
-   * 从平面节点映射到嵌套节点。这有助于我们找到要修改的嵌套节点
+   * 從平面節點對映到巢狀節點。這有助於我們找到要修改的巢狀節點
    *
    */</span>
   flatNodeMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>&lt;TodoItemFlatNode, TodoItemNode&gt;();
@@ -155,7 +155,7 @@
   <span class="hljs-comment">/**
    * Map from nested node to flattened node. This helps us to keep the same object for selection
    *
-   * 从嵌套节点映射到平面节点。这有助于我们保留相同的对象以供选择
+   * 從巢狀節點對映到平面節點。這有助於我們保留相同的物件以供選擇
    *
    */</span>
   nestedNodeMap = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>&lt;TodoItemNode, TodoItemFlatNode&gt;();
@@ -163,7 +163,7 @@
   <span class="hljs-comment">/**
    * A selected parent node to be inserted
    *
-   * 要插入的已选定父节点
+   * 要插入的已選定父節點
    *
    */</span>
   selectedParent: TodoItemFlatNode | <span class="hljs-literal">null</span> = <span class="hljs-literal">null</span>;
@@ -171,7 +171,7 @@
   <span class="hljs-comment">/**
    * The new item&#x27;s name
    *
-   * 新条目的名称
+   * 新條目的名稱
    *
    */</span>
   newItemName = <span class="hljs-string">&#x27;&#x27;</span>;
@@ -185,7 +185,7 @@
   <span class="hljs-comment">/**
    * The selection for checklist
    *
-   * 检查的选择结果
+   * 檢查的選擇結果
    *
    */</span>
   checklistSelection = <span class="hljs-keyword">new</span> SelectionModel&lt;TodoItemFlatNode&gt;(<span class="hljs-literal">true</span> <span class="hljs-comment">/* multiple */</span>);
@@ -218,7 +218,7 @@
   <span class="hljs-comment">/**
    * Transformer to convert nested node to flat node. Record the nodes in maps for later use.
    *
-   * 将嵌套节点转换为平面节点的转换器。在 map 中记录这些节点以备后用。
+   * 將巢狀節點轉換為平面節點的轉換器。在 map 中記錄這些節點以備後用。
    *
    */</span>
   transformer = <span class="hljs-function">(<span class="hljs-params">node: TodoItemNode, level: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
@@ -236,7 +236,7 @@
   <span class="hljs-comment">/**
    * Whether all the descendants of the node are selected.
    *
-   * 节点的所有后代是否都被选定了。
+   * 節點的所有後代是否都被選定了。
    *
    */</span>
   descendantsAllSelected(node: TodoItemFlatNode): <span class="hljs-built_in">boolean</span> {
@@ -252,7 +252,7 @@
   <span class="hljs-comment">/**
    * Whether part of the descendants are selected
    *
-   * 是否选定了部分后代
+   * 是否選定了部分後代
    *
    */</span>
   descendantsPartiallySelected(node: TodoItemFlatNode): <span class="hljs-built_in">boolean</span> {
@@ -264,7 +264,7 @@
   <span class="hljs-comment">/**
    * Toggle the to-do item selection. Select/deselect all the descendants node
    *
-   * 切换待办事项选择结果。选定/取消选定所有后代节点
+   * 切換待辦事項選擇結果。選定/取消選定所有後代節點
    *
    */</span>
   todoItemSelectionToggle(node: TodoItemFlatNode): <span class="hljs-built_in">void</span> {
@@ -282,7 +282,7 @@
   <span class="hljs-comment">/**
    * Toggle a leaf to-do item selection. Check all the parents to see if they changed
    *
-   * 切换叶待办事项的选择结果。检查所有的父母，看看它们是否改变了
+   * 切換葉待辦事項的選擇結果。檢查所有的父母，看看它們是否改變了
    *
    */</span>
   todoLeafItemSelectionToggle(node: TodoItemFlatNode): <span class="hljs-built_in">void</span> {
@@ -302,7 +302,7 @@
   <span class="hljs-comment">/**
    * Check root node checked state and change it accordingly
    *
-   * 检查根节点的勾选状态并相应地更改它
+   * 檢查根節點的勾選狀態並相應地更改它
    *
    */</span>
   checkRootNodeSelection(node: TodoItemFlatNode): <span class="hljs-built_in">void</span> {
@@ -343,7 +343,7 @@
   <span class="hljs-comment">/**
    * Select the category so we can insert the new item.
    *
-   * 选定此类别，以便我们可以插入新条目。
+   * 選定此類別，以便我們可以插入新條目。
    *
    */</span>
   <span class="hljs-function"><span class="hljs-title">addNewItem</span>(<span class="hljs-params">node: TodoItemFlatNode</span>)</span> {
@@ -355,7 +355,7 @@
   <span class="hljs-comment">/**
    * Save the node to database
    *
-   * 将节点保存到数据库
+   * 將節點儲存到資料庫
    *
    */</span>
   <span class="hljs-function"><span class="hljs-title">saveNode</span>(<span class="hljs-params">node: TodoItemFlatNode, itemValue: <span class="hljs-built_in">string</span></span>)</span> {

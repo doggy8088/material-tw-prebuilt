@@ -12,7 +12,7 @@
 <span class="hljs-comment">/**
  * Flat node with expandable and level information
  *
- * 具有可扩展和级别信息的平面节点
+ * 具有可擴充套件和級別訊息的平面節點
  *
  */</span>
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DynamicFlatNode</span> </span>{
@@ -28,7 +28,7 @@
  * Database for dynamic data. When expanding a node in the tree, the data source will need to fetch
  * the descendants data from the database.
  *
- * 动态数据的数据库。当在树中扩展一个节点时，数据源将需要从数据库中获取后代数据。
+ * 動態資料的資料庫。當在樹中擴充套件一個節點時，資料來源將需要從資料庫中獲取後代資料。
  *
  */</span>
 <span class="hljs-meta">@Injectable</span>({<span class="hljs-attr">providedIn</span>: <span class="hljs-string">&#x27;root&#x27;</span>})
@@ -45,7 +45,7 @@
   <span class="hljs-comment">/**
    * Initial data from database
    *
-   * 来自数据库的初始数据
+   * 來自資料庫的初始資料
    *
    */</span>
   initialData(): DynamicFlatNode[] {
@@ -67,7 +67,7 @@
  * The input will be a json object string, and the output is a list of `FileNode` with nested
  * structure.
  *
- * 文件数据库，它可以从字符串构建一个树状结构的 Json 对象。 Json 对象中的每个节点代表一个文件或目录。对于文件，它具有文件名和类型。对于一个目录，它有文件名和子目录（文件或目录的列表）。其输入将是一个 json 对象字符串，其输出是一个具有嵌套结构的 `FileNode` 列表。
+ * 檔案數據函式庫，它可以從字串建立一個樹狀結構的 Json 物件。 Json 物件中的每個節點代表一個檔案或目錄。對於檔案，它具有檔案名和型別。對於一個目錄，它有檔案名和子目錄（檔案或目錄的清單）。其輸入將是一個 json 物件字串，其輸出是一個具有巢狀結構的 `FileNode` 清單。
  *
  */</span>
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DynamicDataSource</span> <span class="hljs-title">implements</span> <span class="hljs-title">DataSource</span>&lt;<span class="hljs-title">DynamicFlatNode</span>&gt; </span>{
@@ -104,7 +104,7 @@
   <span class="hljs-comment">/**
    * Handle expand/collapse behaviors
    *
-   * 处理展开/折叠行为
+   * 處理展開/摺疊行為
    *
    */</span>
   <span class="hljs-function"><span class="hljs-title">handleTreeControl</span>(<span class="hljs-params">change: SelectionChange&lt;DynamicFlatNode&gt;</span>)</span> {
@@ -122,7 +122,7 @@
   <span class="hljs-comment">/**
    * Toggle the node, remove from display list
    *
-   * 切换节点，从显示列表中移除
+   * 切換節點，從顯示清單中移除
    *
    */</span>
   <span class="hljs-function"><span class="hljs-title">toggleNode</span>(<span class="hljs-params">node: DynamicFlatNode, expand: <span class="hljs-built_in">boolean</span></span>)</span> {

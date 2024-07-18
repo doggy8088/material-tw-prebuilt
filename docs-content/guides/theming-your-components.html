@@ -1,29 +1,29 @@
-<div class="docs-markdown"><h1 id="theme-your-own-components-with-angular-materials-theming-system" translation-result="on">使用 Angular Material 的主题体系为你自己的组件设置主题</h1><h1 translation-origin="off">Theme your own components with Angular Material's theming system</h1><p translation-result="on">你可以将 Angular Material 基于 Sass 的主题体系用于自定义组件。</p><p translation-origin="off">You can use Angular Material's Sass-based theming system for your own custom components.</p>
+<div class="docs-markdown"><h1 id="theme-your-own-components-with-angular-materials-theming-system" translation-result="on">使用 Angular Material 的主題體系為你自己的元件設定主題</h1><h1 translation-origin="off">Theme your own components with Angular Material's theming system</h1><p translation-result="on">你可以將 Angular Material 基於 Sass 的主題體系用於自定義元件。</p><p translation-origin="off">You can use Angular Material's Sass-based theming system for your own custom components.</p>
 
 
         <h2 id="reading-style-values-from-a-theme" class="docs-header-link" translation-result="on">
-          <span header-link="从主题中读取样式值"></span>
-          从主题中读取样式值
+          <span header-link="從主題中讀取樣式值"></span>
+          從主題中讀取樣式值
         </h2><h2 class="docs-header-link" translation-origin="off">
           <span header-link="reading-style-values-from-a-theme"></span>
           Reading style values from a theme
         </h2>
       
         
-      <p translation-result="on">如<a href="https://material.angular.io/guide/theming#themes">主题指南</a>中所述，主题是一个 Sass 映射表，其中包含用于自定义组件的样式值。 Angular Material 提供了一些用于从该数据结构中读取值的 API。</p><p translation-origin="off">As described in the <a href="https://material.angular.io/guide/theming#themes">theming guide</a>, a theme is a Sass map that contains style values to
+      <p translation-result="on">如<a href="https://material.angular.io/guide/theming#themes">主題指南</a>中所述，主題是一個 Sass 對映表，其中包含用於自定義元件的樣式值。 Angular Material 提供了一些用於從該資料結構中讀取值的 API。</p><p translation-origin="off">As described in the <a href="https://material.angular.io/guide/theming#themes">theming guide</a>, a theme is a Sass map that contains style values to
 customize components. Angular Material provides APIs for reading values from this data structure.</p>
 
 
         <h3 id="reading-color-values" class="docs-header-link" translation-result="on">
-          <span header-link="读取颜色值"></span>
-          读取颜色值
+          <span header-link="讀取顏色值"></span>
+          讀取顏色值
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="reading-color-values"></span>
           Reading color values
         </h3>
       
         
-      <p translation-result="on">要从主题中读取颜色值，你可以使用 Sass 函数 <code>get-color-config</code>。此函数返回一个 Sass 映射表，其中包含主题的 <code>primary</code>（主要）调色板、<code>accent</code>（强调）调色板和 <code>warn</code>（警告）调色板，以及指示是否设置了暗模式的标志。</p><p translation-origin="off">To read color values from a theme, you can use the <code>get-color-config</code> Sass function. This function
+      <p translation-result="on">要從主題中讀取顏色值，你可以使用 Sass 函式 <code>get-color-config</code>。此函式回傳一個 Sass 對映表，其中包含主題的 <code>primary</code>（主要）調色板、<code>accent</code>（強調）調色板和 <code>warn</code>（警告）調色板，以及指示是否設定了暗模式的標誌。</p><p translation-origin="off">To read color values from a theme, you can use the <code>get-color-config</code> Sass function. This function
 returns a Sass map containing the theme's primary, accent, and warn palettes, as well as a flag
 indicating whether dark mode is set.</p>
 
@@ -44,19 +44,19 @@ indicating whether dark mode is set.</p>
 <span class="hljs-variable">$warn-palette</span>:    map.get(<span class="hljs-variable">$color-config</span>, <span class="hljs-string">'warn'</span>);
 <span class="hljs-variable">$is-dark-theme</span>:   map.get(<span class="hljs-variable">$color-config</span>, <span class="hljs-string">'is-dark'</span>);
 </code></pre>
-<p translation-result="on">关于从调色板读取色调的更多信息，请参阅<a href="https://material.angular.io/guide/theming#reading-hues-from-palettes">主题指南</a>。</p><p translation-origin="off">See the <a href="https://material.angular.io/guide/theming#reading-hues-from-palettes">theming guide</a> for more information on reading hues from palettes.</p>
+<p translation-result="on">關於從調色板讀取色調的更多訊息，請參閱<a href="https://material.angular.io/guide/theming#reading-hues-from-palettes">主題指南</a>。</p><p translation-origin="off">See the <a href="https://material.angular.io/guide/theming#reading-hues-from-palettes">theming guide</a> for more information on reading hues from palettes.</p>
 
 
         <h3 id="reading-typography-values" class="docs-header-link" translation-result="on">
-          <span header-link="读取排版值"></span>
-          读取排版值
+          <span header-link="讀取排版值"></span>
+          讀取排版值
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="reading-typography-values"></span>
           Reading typography values
         </h3>
       
         
-      <p translation-result="on">要从主题中读取排版值，你可以使用 Sass 函数 <code>get-typography-config</code>。有关排版配置数据结构和用来从此配置中读取值的 API 的更多信息，请参阅<a href="https://material.angular.io/guide/typography#typography-config">排版指南</a>。</p><p translation-origin="off">To read typography values from a theme, you can use the <code>get-typography-config</code> Sass function. See
+      <p translation-result="on">要從主題中讀取排版值，你可以使用 Sass 函式 <code>get-typography-config</code>。有關排版設定資料結構和用來從此設定中讀取值的 API 的更多訊息，請參閱<a href="https://material.angular.io/guide/typography#typography-config">排版指南</a>。</p><p translation-origin="off">To read typography values from a theme, you can use the <code>get-typography-config</code> Sass function. See
 the <a href="https://material.angular.io/guide/typography#typography-config">Typography guide</a> for more information about the typography config data
 structure and for APIs for reading values from this config.</p>
 
@@ -67,34 +67,34 @@ structure and for APIs for reading values from this config.</p>
 </code></pre>
 
         <h2 id="separating-theme-styles" class="docs-header-link" translation-result="on">
-          <span header-link="分离主题样式"></span>
-          分离主题样式
+          <span header-link="分離主題樣式"></span>
+          分離主題樣式
         </h2><h2 class="docs-header-link" translation-origin="off">
           <span header-link="separating-theme-styles"></span>
           Separating theme styles
         </h2>
       
         
-      <p translation-result="on">每个 Angular Material 组件都有一个 Sass 文件，该文件定义了用于自定义该组件的颜色和排版的 mixin。例如：<code>MatButton</code> 具有 <code>button-color</code> 和 <code>button-typography</code> 这两个 mixin。它们分别生成该组件的所有颜色和排版样式。</p><p translation-origin="off">Angular Material components each have a Sass file that defines mixins for customizing
+      <p translation-result="on">每個 Angular Material 元件都有一個 Sass 檔案，該檔案定義了用於自定義該組件的顏色和排版的 mixin。例如：<code>MatButton</code> 具有 <code>button-color</code> 和 <code>button-typography</code> 這兩個 mixin。它們分別生成該組件的所有顏色和排版樣式。</p><p translation-origin="off">Angular Material components each have a Sass file that defines mixins for customizing
 that component's color and typography. For example, <code>MatButton</code> has mixins for <code>button-color</code> and
 <code>button-typography</code>. Each mixin emits all color and typography styles for that component,
 respectively.</p>
 
-<p translation-result="on">你可以通过定义自己的 mixin，在你的组件中模仿这种结构。这些 mixin 应该接受一个 Angular Material 主题，它们可以从中读取颜色和排版值。然后，你可以将这些 mixin 与 Angular Material 自己的 mixins 一起包含在你的应用程序中。</p><p translation-origin="off">You can mirror this structure in your components by defining your own mixins. These mixins
+<p translation-result="on">你可以透過定義自己的 mixin，在你的元件中模仿這種結構。這些 mixin 應該接受一個 Angular Material 主題，它們可以從中讀取顏色和排版值。然後，你可以將這些 mixin 與 Angular Material 自己的 mixins 一起包含在你的應用程式中。</p><p translation-origin="off">You can mirror this structure in your components by defining your own mixins. These mixins
 should accept an Angular Material theme, from which they can read color and typography values. You
 can then include these mixins in your application along with Angular Material's own mixins.</p>
 
 
         <h2 id="step-by-step-example" class="docs-header-link" translation-result="on">
-          <span header-link="分步示例"></span>
-          分步示例
+          <span header-link="分步範例"></span>
+          分步範例
         </h2><h2 class="docs-header-link" translation-origin="off">
           <span header-link="step-by-step-example"></span>
           Step-by-step example
         </h2>
       
         
-      <p translation-result="on">为了说明如何融入 Angular Material 的主题体系，我们可以看一个自定义轮播组件的示例。 此轮播组件从单一文件 <code>carousel.scss</code> 开始，其中包含结构、颜色和排版样式。该文件包含在组件的 <code>styleUrls</code> 中。</p><p translation-origin="off">To illustrate participation in Angular Material's theming system, we can look at an example of a
+      <p translation-result="on">為了說明如何融入 Angular Material 的主題體系，我們可以看一個自定義輪播元件的範例。 此輪播元件從單一檔案 <code>carousel.scss</code> 開始，其中包含結構、顏色和排版樣式。該檔案包含在元件的 <code>styleUrls</code> 中。</p><p translation-origin="off">To illustrate participation in Angular Material's theming system, we can look at an example of a
 custom carousel component. The carousel starts with a single file, <code>carousel.scss</code>, that contains
 structural, color, and typography styles. This file is included in the <code>styleUrls</code> of the component.</p>
 
@@ -112,15 +112,15 @@ structural, color, and typography styles. This file is included in the <code>sty
 </code></pre>
 
         <h3 id="step-1-extract-theme-based-styles-to-a-separate-file" class="docs-header-link" translation-result="on">
-          <span header-link="步骤-1：将基于主题的样式提取到单独的文件中"></span>
-          步骤 1：将基于主题的样式提取到单独的文件中
+          <span header-link="步驟-1：將基於主題的樣式提取到單獨的檔案中"></span>
+          步驟 1：將基於主題的樣式提取到單獨的檔案中
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="step-1-extract-theme-based-styles-to-a-separate-file"></span>
           Step 1: Extract theme-based styles to a separate file
         </h3>
       
         
-      <p translation-result="on">为了更改此文件以融入 Angular Material 的主题体系，我们将这些样式拆分为两个文件，把颜色和排版样式移动到 mixin 中。按照惯例，新文件名以 <code>-theme</code> 结尾。此外，该文件以下划线 (<code>_</code>) 开头，以表明这是一个 Sass “部分（partial）文件”。关于“部分文件”的更多信息，请参阅 <a href="https://sass-lang.com/guide#topic-4">Sass 文档</a>。</p><p translation-origin="off">To change this file to participate in Angular Material's theming system, we split the styles into
+      <p translation-result="on">為了更改此檔案以融入 Angular Material 的主題體系，我們將這些樣式拆分為兩個檔案，把顏色和排版樣式移動到 mixin 中。按照慣例，新檔案名以 <code>-theme</code> 結尾。此外，該檔案以下劃線 (<code>_</code>) 開頭，以表明這是一個 Sass 『部分（partial）檔案』。關於『部分檔案』的更多訊息，請參閱 <a href="https://sass-lang.com/guide#topic-4">Sass 文件</a>。</p><p translation-origin="off">To change this file to participate in Angular Material's theming system, we split the styles into
 two files, with the color and typography styles moved into mixins. By convention, the new file
 name ends with <code>-theme</code>. Additionally, the file starts with an underscore (<code>_</code>), indicating that
 this is a Sass partial file. See the <a href="https://sass-lang.com/guide#topic-4">Sass documentation</a> for more information about
@@ -152,15 +152,15 @@ partial files.</p>
 </code></pre>
 
         <h3 id="step-2-use-values-from-the-theme" class="docs-header-link" translation-result="on">
-          <span header-link="第-2-步：使用主题中的值"></span>
-          第 2 步：使用主题中的值
+          <span header-link="第-2-步：使用主題中的值"></span>
+          第 2 步：使用主題中的值
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="step-2-use-values-from-the-theme"></span>
           Step 2: Use values from the theme
         </h3>
       
         
-      <p translation-result="on">现在，这些基于主题的样式都存在于 mixin 中，我们可以从传给这些 mixin 的主题中提取我们需要的值。</p><p translation-origin="off">Now that theme theme-based styles reside in mixins, we can extract the values we need from the
+      <p translation-result="on">現在，這些基於主題的樣式都存在於 mixin 中，我們可以從傳給這些 mixin 的主題中提取我們需要的值。</p><p translation-origin="off">Now that theme theme-based styles reside in mixins, we can extract the values we need from the
 theme passed into the mixins.</p>
 
 <pre><code class="language-scss"><span class="hljs-comment">// _carousel-theme.scss</span>
@@ -192,15 +192,15 @@ theme passed into the mixins.</p>
 </code></pre>
 
         <h3 id="step-3-add-a-theme-mixin" class="docs-header-link" translation-result="on">
-          <span header-link="第-3-步：添加主题-mixin"></span>
-          第 3 步：添加主题 mixin
+          <span header-link="第-3-步：新增主題-mixin"></span>
+          第 3 步：新增主題 mixin
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="step-3-add-a-theme-mixin"></span>
           Step 3: Add a theme mixin
         </h3>
       
         
-      <p translation-result="on">为方便起见，我们可以添加一个包含颜色和排版的 <code>theme</code> mixin。如果指定了配置，则此主题 mixin 应仅生成每种颜色和排版的样式。</p><p translation-origin="off">For convenience, we can add a <code>theme</code> mixin that includes both color and typography.
+      <p translation-result="on">為方便起見，我們可以新增一個包含顏色和排版的 <code>theme</code> mixin。如果指定了設定，則此主題 mixin 應僅生成每種顏色和排版的樣式。</p><p translation-origin="off">For convenience, we can add a <code>theme</code> mixin that includes both color and typography.
 This theme mixin should only emit the styles for each color and typography, respectively, if they
 have a config specified.</p>
 
@@ -245,15 +245,15 @@ have a config specified.</p>
 </code></pre>
 
         <h3 id="step-4-include-the-theme-mixin-in-your-application" class="docs-header-link" translation-result="on">
-          <span header-link="第-4-步：在你的应用程序中包含主题-mixin"></span>
-          第 4 步：在你的应用程序中包含主题 mixin
+          <span header-link="第-4-步：在你的應用程式中包含主題-mixin"></span>
+          第 4 步：在你的應用程式中包含主題 mixin
         </h3><h3 class="docs-header-link" translation-origin="off">
           <span header-link="step-4-include-the-theme-mixin-in-your-application"></span>
           Step 4: Include the theme mixin in your application
         </h3>
       
         
-      <p translation-result="on">现在你已经定义了轮播组件的主题 mixin，可以将此 mixin 与其他主题 mixin 一起包含在你的应用程序中。</p><p translation-origin="off">Now that you've defined the carousel component's theme mixin, you can include this mixin along with
+      <p translation-result="on">現在你已經定義了輪播元件的主題 mixin，可以將此 mixin 與其他主題 mixin 一起包含在你的應用程式中。</p><p translation-origin="off">Now that you've defined the carousel component's theme mixin, you can include this mixin along with
 the other theme mixins in your application.</p>
 
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
